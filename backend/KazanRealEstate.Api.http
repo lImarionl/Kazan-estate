@@ -1,0 +1,6 @@
+@KazanRealEstate.Api_HostAddress = http://localhost:5278
+
+GET {{KazanRealEstate.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

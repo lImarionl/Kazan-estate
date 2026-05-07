@@ -1,0 +1,63 @@
+name: kazan-estate
+
+services:
+  db:
+    image: postgres:latest
+    container_name: kazan-estate-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: kazan_estate
+    ports:
+      - "5444:5432"  # Map host port 5444 to container port 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d kazan_estate"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: kazan-estate-backend
+    ports:
+      - "5100:5100"  # Expose backend API to host (matching frontend config)
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=kazan_estate;Username=admin;Password=password123
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: kazan-estate-frontend
+    ports:
+      - "3000:3000"  # Expose React frontend to host
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules  # Prevent local node_modules from overriding container's dependencies
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: kazan-estate-ml
+    ports:
+      - "8000:8000"  # Expose ML service API to host
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

@@ -1,0 +1,198 @@
+# ==============================================================================
+# Kazan Estate Monorepo .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encrypt
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+*.cab
+[Dd]esktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.trash
+
+# ------------------------------------------------------------------------------
+# IDEs and Editors
+# ------------------------------------------------------------------------------
+# JetBrains (Rider, WebStorm, PyCharm, etc.)
+.idea/
+*.iws
+out/
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+.history/
+*.code-workspace
+
+# Visual Studio (general)
+*.user
+*.userosscache
+*.sln.docstates
+_ReSharper*/
+*.suo
+*.userprefs
+
+# ------------------------------------------------------------------------------
+# Local Environment & Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+*.pem
+*.key
+*.cert
+secrets.json
+appsettings.Local.json
+
+# ------------------------------------------------------------------------------
+# Docker and Local Containers
+# ------------------------------------------------------------------------------
+.docker-logs/
+docker-compose.override.yml
+
+# ------------------------------------------------------------------------------
+# Backend: .NET / C#
+# ------------------------------------------------------------------------------
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored as of NuGet 3.0+
+**/packages/
+!**/packages/repositories.config
+
+# EF Core Migrations & SQLite local databases (if any)
+*.db
+*.db-shm
+*.db-wal
+
+# ------------------------------------------------------------------------------
+# Frontend: Node / React
+# ------------------------------------------------------------------------------
+# Dependencies
+node_modules/
+jspm_packages/
+.pnp/
+.pnp.js
+
+# Production builds
+build/
+dist/
+out/
+.next/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# ------------------------------------------------------------------------------
+# ML Service: Python / Machine Learning
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script run within a shell
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit tests / Coverage reports
+htmlcov/
+.tox/
+.nosenv/
+.pytest_cache/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Local Data Storage
+# ------------------------------------------------------------------------------
+# If local volume data is kept in the project root
+data/
+pgdata/
