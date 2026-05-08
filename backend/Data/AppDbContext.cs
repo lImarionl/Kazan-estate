@@ -31,7 +31,7 @@ public class AppDbContext : DbContext
                 Id = 1, Name = "ЖК Царево Village", District = "Пестречинский", Class = "Эко-поселок", DeveloperId = 1, 
                 MinPrice = 4500000, MaxPrice = 8500000,
                 Description = "Уютный пригородный поселок с парками, школами и уникальной атмосферой.",
-                ImageUrl = "https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800",
+                ImageUrl = "https://avatars.mds.yandex.net/get-altay/6145759/2a0000018351980ebe3b972ca5e8b8186cad/XXXL",
                 CompletionDate = new DateTime(2025, 12, 1),
                 DistanceToCenter = 15.5, InfrastructureRating = 3.5, EcologicalRating = 4.8, BuildingMaterial = "Brick"
             },
@@ -49,7 +49,7 @@ public class AppDbContext : DbContext
                 Id = 3, Name = "ЖК Мой Ритм", District = "Советский", Class = "Бизнес-лайт", DeveloperId = 2, 
                 MinPrice = 7500000, MaxPrice = 16000000,
                 Description = "Современный жилой массив рядом с ТЦ Мега и будущей станцией метро.",
-                ImageUrl = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800",
+                ImageUrl = "https://avatars.mds.yandex.net/get-altay/9714262/2a0000018a89ad2ce0ff4875a462eb087aee/L",
                 CompletionDate = new DateTime(2026, 3, 1),
                 DistanceToCenter = 7.5, InfrastructureRating = 4.5, EcologicalRating = 3.5, BuildingMaterial = "Monolith"
             },
@@ -58,7 +58,7 @@ public class AppDbContext : DbContext
                 Id = 4, Name = "ЖК Savin House", District = "Ново-Савиновский", Class = "Бизнес", DeveloperId = 3, 
                 MinPrice = 15000000, MaxPrice = 45000000,
                 Description = "Премиальный комплекс с видом на Казанку и Кремль в самом центре Кварталов.",
-                ImageUrl = "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800",
+                ImageUrl = "https://avatars.mds.yandex.net/get-altay/1027639/2a00000187041eef8f0ee9fc06a83a921e8a/XXXL",
                 CompletionDate = new DateTime(2025, 9, 1),
                 DistanceToCenter = 3.2, InfrastructureRating = 4.8, EcologicalRating = 3.8, BuildingMaterial = "Monolith"
             },
@@ -67,7 +67,7 @@ public class AppDbContext : DbContext
                 Id = 5, Name = "ЖК Atlantis Deluxe", District = "Кировский", Class = "Элит", DeveloperId = 3, 
                 MinPrice = 18000000, MaxPrice = 60000000,
                 Description = "Стеклянные башни на берегу реки с панорамным остеклением и яхт-клубом.",
-                ImageUrl = "https://images.unsplash.com/photo-1475855581690-804d4628733c?q=80&w=800",
+                ImageUrl = "https://avatars.mds.yandex.net/get-altay/7044542/2a00000182eadb9ef479397f71366eaeb81c/XXXL",
                 CompletionDate = new DateTime(2024, 12, 1),
                 DistanceToCenter = 2.5, InfrastructureRating = 4.7, EcologicalRating = 3.5, BuildingMaterial = "Monolith"
             },
@@ -76,7 +76,7 @@ public class AppDbContext : DbContext
                 Id = 6, Name = "ЖК Vincent", District = "Вахитовский", Class = "Элит", DeveloperId = 4, 
                 MinPrice = 25000000, MaxPrice = 80000000,
                 Description = "Клубный дом в историческом центре Казани рядом с парком 'Черное озеро'.",
-                ImageUrl = "https://images.unsplash.com/photo-1460317442991-0ec23938714b?q=80&w=800",
+                ImageUrl = "https://avatars.mds.yandex.net/get-altay/11302718/2a0000018f4ca804b24d30dc496631db4b1e/XXXL",
                 CompletionDate = new DateTime(2025, 6, 1),
                 DistanceToCenter = 0.5, InfrastructureRating = 5.0, EcologicalRating = 4.2, BuildingMaterial = "Brick"
             },
@@ -85,7 +85,7 @@ public class AppDbContext : DbContext
                 Id = 7, Name = "ЖК Легенда", District = "Приволжский", Class = "Комфорт", DeveloperId = 2, 
                 MinPrice = 6000000, MaxPrice = 12000000,
                 Description = "Яркий жилой комплекс рядом со станцией метро 'Аметьево'.",
-                ImageUrl = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=800",
+                ImageUrl = "https://avatars.mds.yandex.net/get-altay/4465274/2a00000178ee5629109754179e786b4e3808/XXXL",
                 CompletionDate = new DateTime(2025, 3, 1),
                 DistanceToCenter = 6.0, InfrastructureRating = 4.0, EcologicalRating = 3.0, BuildingMaterial = "Monolith"
             }
