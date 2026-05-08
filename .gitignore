@@ -194,5 +194,4 @@ venv.bak/
 # Local Data Storage
 # ------------------------------------------------------------------------------
 # If local volume data is kept in the project root
-data/
 pgdata/

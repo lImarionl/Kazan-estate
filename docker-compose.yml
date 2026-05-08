@@ -2,7 +2,7 @@ name: kazan-estate
 
 services:
   db:
-    image: postgres:latest
+    image: postgres:17
     container_name: kazan-estate-db
     environment:
       POSTGRES_USER: admin
