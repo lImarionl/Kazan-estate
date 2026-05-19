@@ -55,8 +55,7 @@ function App() {
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
                 <button onClick={() => setView('complexes')} style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>Смотреть новостройки</button>
-                <button style={{ padding: '1rem 2rem', fontSize: '1.1rem', background: 'transparent', border: '1px solid var(--primary)' }}>Умный подбор</button>
-              </div>
+                 </div>
             </section>
 
             <footer style={{ marginTop: '5rem', padding: '2rem 0', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', color: '#64748b' }}>
