@@ -59,33 +59,6 @@ function App() {
               </div>
             </section>
 
-            <section className="prediction-panel">
-              <div className="prediction-header">
-                <h2>Умный калькулятор (AI)</h2>
-                <p style={{ color: '#94a3b8' }}>Предсказание стоимости и сроков сдачи на основе нейронной сети</p>
-              </div>
-
-              <div className="prediction-form">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  <label>Площадь (м²)</label>
-                  <input type="number" placeholder="45" />
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  <label>Район</label>
-                  <select>
-                    <option>Вахитовский</option>
-                    <option>Ново-Савиновский</option>
-                    <option>Советский</option>
-                    <option>Приволжский</option>
-                    <option>Кировский</option>
-                    <option>Московский</option>
-                    <option>Авиастроительный</option>
-                  </select>
-                </div>
-                <button onClick={() => addNotification('Модуль ИИ будет подключен на следующем этапе.', 'info')}>Рассчитать стоимость</button>
-              </div>
-            </section>
-
             <footer style={{ marginTop: '5rem', padding: '2rem 0', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', color: '#64748b' }}>
               &copy; 2026 Kazan Estate Рекомендательная система.
             </footer>
