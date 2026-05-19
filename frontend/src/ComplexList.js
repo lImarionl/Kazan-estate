@@ -126,7 +126,8 @@ function ComplexList({ token, onBack }) {
           <div key={item.id} className="card" style={{ padding: 0, overflow: 'hidden' }}>
             <div style={{ height: '200px', width: '100%', overflow: 'hidden' }}>
               <img 
-                src={item.imageUrl || 'https://via.placeholder.com/400x200?text=Kazan+Estate'} 
+                src={`/images/complex_${item.id}.jpg`} 
+                onError={(e) => { e.target.onerror = null; e.target.src = item.imageUrl || 'https://via.placeholder.com/400x200?text=Kazan+Estate'; }}
                 alt={item.name} 
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
